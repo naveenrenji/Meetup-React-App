@@ -4,22 +4,21 @@ import FavoritesContext from '../store/favorites-context';
 import { useContext } from 'react';
 
 function MeetupItem(props) {
-    let favoritesCtx = useContext(FavoritesContext);
-    let itemIsFavorite = favoritesCtx.itemIsFavorite;
-
+    const favoritesCtx = useContext(FavoritesContext);
+    const itemIsFavorite = favoritesCtx.itemIsFavorite(props.id);
+  
     function toggleFavoriteStatusHandler() {
-        if (itemIsFavorite) {
-            favoritesCtx.removeFavoriteHandler(props.id);
-        }
-        else {
-            favoritesCtx.addFavoriteHandler({
-                id: props.id,
-                title: props.title,
-                address: props.address,
-                description: props.description,
-                image: props.image
-            });
-        }
+      if (itemIsFavorite) {
+        favoritesCtx.removeFavorite(props.id);
+      } else {
+        favoritesCtx.addFavorite({
+          id: props.id,
+          title: props.title,
+          description: props.description,
+          image: props.image,
+          address: props.address,
+        });
+      }
     }
 
     return <li className={classes.item}>
