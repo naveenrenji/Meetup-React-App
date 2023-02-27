@@ -6,7 +6,7 @@ function NewMeetupPage() {
 
   function addMeetupHandler(meetupData){
     fetch(
-      // removed firebase api url for security reasons,
+      //removed firebase api url for security reasons,
       {
         method:'POST',
         body: JSON.stringify(meetupData),
