@@ -8,14 +8,14 @@ function MainNavigation() {
     const totalFavorites = favoriteCtx.totalFavorites;
 
     return <header className={classes.header}>
-        <div className={classes.logo}>React Meetups</div>
+        <div className={classes.logo}>Popular Hot Spots of New York City</div>
         <nav>
             <ul>
                 <li>
-                    <Link to='/'>All Meetups </Link>
+                    <Link to='/'>All Hot Spots </Link>
                 </li>
                 <li>
-                    <Link to='/new-meetup'>Add New Meetup </Link>
+                    <Link to='/new-meetup'>Add New Hot Spot </Link>
                 </li>
                 <li>
                     <Link to='/favorites'>My Favorites
