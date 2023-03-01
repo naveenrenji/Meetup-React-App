@@ -27,23 +27,23 @@ const NewMeetupForm = (props) => {
     return <Card>
         <form className={classes.form} onSubmit={submitHandler}>
             <div className={classes.control}>
-                <label htmlFor='title'>Meetup Title</label>
+                <label htmlFor='title'>Hot Spot Title</label>
                 <input type='text' required id='title' ref={titleInputRef}/>    
             </div>
             <div className={classes.control}>
-                <label htmlFor='image'>Meetup Image</label>
+                <label htmlFor='image'>Hot Spot Image</label>
                 <input type='url' required id='image' ref={imageInputRef}/>    
             </div>
             <div className={classes.control}>
-                <label htmlFor='address'>Meetup Address</label>
+                <label htmlFor='address'>Hot Spot Address</label>
                 <input type='text' required id='address' ref={addressInputRef}/>    
             </div>
             <div className={classes.control}>
-                <label htmlFor='description'>Meetup Description</label>
+                <label htmlFor='description'>Hot Spot Description</label>
                 <textarea required id='description' rows={5} ref={descriptionInputRef}></textarea>    
             </div>
             <div className={classes.actions}>
-                <button>Add Meetup</button>
+                <button>Add Hot Spot</button>
             </div>
         </form>
     </Card>
