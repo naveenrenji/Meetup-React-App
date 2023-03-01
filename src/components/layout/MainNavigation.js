@@ -8,7 +8,7 @@ function MainNavigation() {
     const totalFavorites = favoriteCtx.totalFavorites;
 
     return <header className={classes.header}>
-        <div className={classes.logo}>Popular Hot Spots of New York City</div>
+        <div className={classes.logo}>NYC Hot Spots</div>
         <nav>
             <ul>
                 <li>
