@@ -13,7 +13,7 @@ function FavoritesPage() {
         content = <MeetupList meetups={favoriteCtx.favorites}></MeetupList>
     }
     return <div>
-        <h1>Your Favorite Meetups</h1>
+        <h1>Your Favorite Hot Spots</h1>
         {content}
     </div>
 }
